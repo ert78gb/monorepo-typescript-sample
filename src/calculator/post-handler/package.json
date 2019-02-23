@@ -1,0 +1,18 @@
+{
+  "name": "sub-service",
+  "version": "0.0.0-development",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4",
+    "stupid-logger": "file:../../common-node-packages/stupid-logger"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "start": "node dist/post-handler.bundle.js",
+    "debug": "nodemon -L --inspect=0.0.0.0:9229 dist/post-handler.bundle.js",
+    "bundle": "webpack --color",
+    "bundle:dev": "npm run bundle -- --watch"
+  }
+}

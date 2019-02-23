@@ -1,0 +1,17 @@
+{
+  "name": "sub-service",
+  "version": "0.0.0-development",
+  "private": true,
+  "dependencies": {
+    "js-sub": "file:../../common-node-packages/js-sub"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "start": "node dist/sub-service.bundle.js",
+    "debug": "nodemon -L --inspect=0.0.0.0:9229 dist/sub-service.bundle.js",
+    "bundle": "webpack --color",
+    "bundle:dev": "npm run bundle -- --watch"
+  }
+}

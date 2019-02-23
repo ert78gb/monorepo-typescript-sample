@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "src/common-node-packages/**",
+    "src/calculator/**"
+  ],
+  "version": "0.0.0"
+}

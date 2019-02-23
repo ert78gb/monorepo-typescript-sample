@@ -1,0 +1,25 @@
+version: '3.2'
+services:
+  sum-service:
+    build:
+      context: ./sum-service
+      args:
+        ENVIRONMENT: development
+        NODE_PORT: 8080
+        DEBUG_PORT_NAME: 9229
+    volumes:
+      - ./sum-service/:/home/node/app
+    ports:
+      - "8080:8080"
+      - "9229:9229"
+    command: "npm run debug"
+
+  sub-service:
+    build:
+      context: ./sub-service
+    volumes:
+      - ./sub-service/:/home/node/app
+    ports:
+      - "8081:8080"
+      - "9230:9229"
+    command: "npm run debug"

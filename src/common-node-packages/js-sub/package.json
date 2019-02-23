@@ -1,0 +1,12 @@
+{
+  "name": "js-sub",
+  "version": "0.0.0-development",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "dependencies": {
+    "stupid-logger": "file:../stupid-logger"
+  },
+  "scripts": {
+    "test": "mocha --require ts-node/register"
+  }
+}

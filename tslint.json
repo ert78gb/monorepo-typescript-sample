@@ -1,0 +1,40 @@
+{
+  "extends": "tslint:recommended",
+  "jsRules": {
+    "newline-before-return": true,
+    "newline-per-chained-call": true,
+    "no-console": false,
+    "object-literal-sort-keys": [
+      true,
+      "shorthand-first"
+    ],
+    "quotemark": false,
+    "semicolon": false,
+    "trailing-comma": true,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ]
+  },
+  "rules": {
+    "interface-name": false,
+    "newline-before-return": true,
+    "newline-per-chained-call": true,
+    "no-console": false,
+    "object-literal-sort-keys": [
+      true,
+      "shorthand-first"
+    ],
+    "quotemark": false,
+    "semicolon": false,
+    "trailing-comma": true,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ]
+  }
+}

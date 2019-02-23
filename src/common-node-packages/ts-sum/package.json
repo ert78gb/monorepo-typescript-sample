@@ -1,0 +1,17 @@
+{
+  "name": "ts-sum",
+  "version": "0.0.0-development",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "stupid-logger": "file:../stupid-logger"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.3"
+  },
+  "scripts": {
+    "build": "tsc --project src/tsconfig.json",
+    "test": "mocha --require ts-node/register",
+    "watch": "npm run build -- --watch --preserveWatchOutput"
+  }
+}

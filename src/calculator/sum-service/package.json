@@ -1,0 +1,17 @@
+{
+  "name": "sum-service",
+  "version": "0.0.0-development",
+  "private": true,
+  "dependencies": {
+    "ts-sum": "file:../../common-node-packages/ts-sum"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "start": "node dist/sum-service.bundle.js",
+    "debug": "nodemon -L --inspect=0.0.0.0:9229 dist/sum-service.bundle.js",
+    "bundle": "webpack --color",
+    "bundle:dev": "npm run bundle -- --watch"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "stupid-logger",
+  "version": "0.0.0-development",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project src/tsconfig.json",
+    "test": "mocha --require ts-node/register",
+    "watch": "npm run build -- --watch --preserveWatchOutput"
+  }
+}
